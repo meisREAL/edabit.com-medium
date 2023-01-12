@@ -8,12 +8,12 @@
 // *All array items are of the type bool (true or false).
 
 function countTrue(arr) {
-    if (arr[0]) {
+    if (arr.length === 0) {
         return 0;
     } else {
         let count = 0;
         for (let i = 0; i < arr.length; i++) {
-            if (arr[i]) {
+            if (arr[i] === true) {
                 count++;
             }
         }
@@ -21,4 +21,4 @@ function countTrue(arr) {
     }
 }
 
-countTrue([true, false, false, true, false])
+console.log(countTrue([true, false, false, true, false]))
