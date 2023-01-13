@@ -103,7 +103,7 @@ function num_of_digits(num) {
     return count
 }
 
-// Given three arguments ⁠— an object obj of the stolen items, the pets name and a value ⁠— return an object with that name and value in it (as key-value pairs).
+//* Given three arguments ⁠— an object obj of the stolen items, the pets name and a value ⁠— return an object with that name and value in it (as key-value pairs).
 // Examples
 // addName({}, "Brutus", 300) ➞ { Brutus: 300 }
 // addName({ piano: 500 }, "Brutus", 400) ➞ { piano: 500, Brutus: 400 }
@@ -114,4 +114,16 @@ function num_of_digits(num) {
 function addName(obj, name, value) {
     obj[name] = value;
     return obj;
+}
+
+//* Create a function that takes numbers b and m as arguments and returns the derivative of the function f(x)=x^b with respect to x evaluated at x=m, where b and m are constants.
+// Examples
+// derivative(1, 4) ➞ 1
+// derivative(3, -2) ➞ 12
+// derivative(4, -3) ➞ -108
+// Notes
+// ^ in the context of this challenge means "to the power of", also known as the "exponent" operator.
+
+function derivative(b, m) {
+    return b * m ** (b - 1);
 }
