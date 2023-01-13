@@ -86,3 +86,19 @@ function perimeter(l, num) {
         + (6.28 * num) * (l === 'c')
 };
 //! jeigu l === s tai skaicius skliaustuose tampa 1, nes true reisksmes yra = 1, jeigu lygybe yra false tai skaicius skliaustuose tampa 0, o daugyba is 0 bus lygi 0. Tada skaicius + 0 = skaiciui.
+
+//* Create a function that will return an integer number corresponding to the amount of digits in the given integer num.
+// Examples
+num_of_digits(1000)
+// num_of_digits(12) ➞ 2
+// num_of_digits(1305981031) ➞ 10
+// num_of_digits(0) ➞ 1
+// Notes
+// Try to solve this challenge without using strings!
+
+function num_of_digits(num) {
+    // const re = /1234567890/g
+    // return (num.match(/[0-9]/g) || []).length
+    const count = (String(num).match(/[0-9]/g) || []).length
+    return count
+}
